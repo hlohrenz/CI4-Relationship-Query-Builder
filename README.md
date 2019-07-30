@@ -1,6 +1,6 @@
 # CodeIgniter 4 Relationship Query Builder
 
-## What does this add to CI4?
+## What does this add to CI4? How do I setup my project with this?
 
 This is an addition to the CodeIgniter 4 framework. This adds scopes and relationship query builder methods onto the current query builder. You simply use this library by extending your models with the BaseModel found in app/Models. You can run & test all sorts of scenarios with this setup.
 
@@ -11,6 +11,8 @@ In order to use this setup, you must add the string_helper into your Helpers and
 helper('string');
 helper('inflector');
 ```
+
+Also make sure to add the Support directory inside the app directory to your project!
 
 ## Relationships
 
