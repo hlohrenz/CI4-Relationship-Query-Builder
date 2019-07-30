@@ -4,6 +4,14 @@
 
 This is an addition to the CodeIgniter 4 framework. This adds scopes and relationship query builder methods onto the current query builder. You simply use this library by extending your models with the BaseModel found in app/Models. You can run & test all sorts of scenarios with this setup.
 
+In order to use this setup, you must add the string_helper into your Helpers and load it in your public/index.php file along with the inflector helper:
+
+```php
+// Global helpers that should be available on every request
+helper('string');
+helper('inflector');
+```
+
 ## Relationships
 
 Currently, there are 4 relationships available: HasOne, HasMany, BelongsTo, and BelongsToMany. You set these up in your models similar to how Laravel 5 does. The code was heavily inspired by the Laravel framework, but was adjusted to work with CodeIgniter's query builder.

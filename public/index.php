@@ -35,6 +35,10 @@ $paths = new Config\Paths();
 // Location of the framework bootstrap file.
 $app = require rtrim($paths->systemDirectory, '/ ') . '/bootstrap.php';
 
+// Global helpers that should be available on every request
+helper('string');
+helper('inflector');
+
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION
